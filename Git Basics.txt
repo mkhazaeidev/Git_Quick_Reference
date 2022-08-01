@@ -88,17 +88,35 @@ Viewing the Commit History
     3- to see some abbreviated stats for each commit:
         git log --stat
 
-    4- to show only the last num entries:
-        git log -num
-
-    5- Prints each commit on a single line:
+    4- Prints each commit on a single line:
         a- git log --pretty=oneline
 
            --help: In addition, the short, full, and fuller values show the output in roughly the same format but with less or more information, respectively
 
         b- git log --oneline
 
-    6- Showing your branch and merge history ASCII graph:
+    5- Showing your branch and merge history ASCII graph:
         git log --graph
     
 Limiting Log Output
+    1- Displays only the last -<n> entries:
+        git log -<n>
+
+    2- The list of commits made in the last <n> weeks:
+        git log --since=<n>.weeks
+        --help: you can use minutes, hours, days, weeks, years
+    
+    3- To filter on a specific author:
+        git log --author="author name"
+
+    4- Search for keywords in the commit messages:
+        git log --grep=<keywords>
+
+    5- Show the commit that changed the <text>:
+        git log -S <text>
+
+    6- To filter log specify a directory or file name:
+        git log -- path/to/file
+
+
+Undoing Things
