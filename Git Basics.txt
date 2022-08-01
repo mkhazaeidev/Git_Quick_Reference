@@ -1,0 +1,48 @@
+Getting a Git Repository
+    1- Initializing a Repository in an Existing Directory:
+        git init
+
+    2- Cloning an Existing Repository:
+        git clone <url>
+
+        --example: git clone https://github.com/mkhazaeidev/Git_Quick_Reference.git
+
+Checking the Status of Your Files:
+    1- Comprehensive status:
+        git status
+
+    2- Short Status:
+        git status -s
+        git status --short
+
+        --help:
+            ??: Unmodified
+            A: Added
+            C: Copied
+            D: Deleted
+            M: Modified
+            U: Updated but unmerged
+            R: Renamed
+
+            left-hand column: indicates the status of the staging area
+            right-hand column: indicates the status of the working directory
+
+            --example:
+                 M: The file is modified in the working directory but not yet staged.
+                M : The file is modified and staged.
+                MM: The file was modified, staged and then modified again, so there are changes to it that are both staged and unstaged.
+
+Tracking New Files
+    git add <files>
+
+Tracking All Files
+    git add .
+    git add -A
+
+Restore files (from Working Directory)
+    git restore <file>
+
+Restore files (from Staging Area)
+    git restore --staged <file>
+
+    
