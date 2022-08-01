@@ -1,0 +1,44 @@
+First-Time Git Setup
+
+
+Customize your Git environment:
+    1- You can view all of your settings and where they are coming from using:
+        git config --list --show-origin
+
+    2- Your Identity
+        a- Set your user name:
+            git config --global user.name "your name"
+
+        b- Set your user email address
+            git config --global user.email "your email"
+
+        c- Configure the default text editor
+            git config --global core.editor <yourEditorName or editorPath>
+
+        --help: You can do these settings for --system and --local
+
+Your default branch name:
+    1- To set 'main' as the default branch name do:
+        git config --global init.defaultBranch main
+
+Checking Your Settings:
+    1- Check your configuration settings:
+        git config --list
+
+    2- Check a specific key’s value:
+        git config <key>
+        
+        --example: git config user.name (output: your name)
+
+Getting Help:
+    1- full-blown manpage help:
+        a- git help <verb>
+
+        b- git <verb> --help
+
+        c- man git-<verb>
+
+        --example: git help config
+    
+    2- Quick help:
+        git <verb> -h
