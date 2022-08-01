@@ -1,0 +1,9 @@
+Viewing Your Staged and Unstaged Changes
+    1- To see what you've changed in working directory:
+        git diff
+
+    2- To see what you've changed in staged area:
+        git diff --staged
+
+    3- To see what you’ve staged so far:
+        git diff --cached

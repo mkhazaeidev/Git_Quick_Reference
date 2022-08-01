@@ -1,0 +1,5 @@
+Committing Your Changes
+    git commit -m "message"
+
+Skipping the Staging Area
+    git commit -a -m "message"

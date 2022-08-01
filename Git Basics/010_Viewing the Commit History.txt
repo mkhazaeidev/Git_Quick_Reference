@@ -1,0 +1,20 @@
+Viewing the Commit History
+    1- To look back to see what has happened (see all commit)
+        git log
+
+    2- to show the difference introduced in each commit:
+        git log -p
+        git log --patch
+
+    3- to see some abbreviated stats for each commit:
+        git log --stat
+
+    4- Prints each commit on a single line:
+        a- git log --pretty=oneline
+
+           --help: In addition, the short, full, and fuller values show the output in roughly the same format but with less or more information, respectively
+
+        b- git log --oneline
+
+    5- Showing your branch and merge history ASCII graph:
+        git log --graph

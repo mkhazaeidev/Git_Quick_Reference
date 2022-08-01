@@ -1,0 +1,8 @@
+Getting a Git Repository
+    1- Initializing a Repository in an Existing Directory:
+        git init
+
+    2- Cloning an Existing Repository:
+        git clone <url>
+
+        --example: git clone https://github.com/mkhazaeidev/Git_Quick_Reference.git

@@ -1,6 +1,3 @@
-First-Time Git Setup
-
-
 Customize your Git environment:
     1- You can view all of your settings and where they are coming from using:
         git config --list --show-origin

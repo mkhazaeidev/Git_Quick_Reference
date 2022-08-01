@@ -1,0 +1,5 @@
+Restore files (from Working Directory)
+    git restore <file>
+
+Restore files (from Staging Area)
+    git restore --staged <file>

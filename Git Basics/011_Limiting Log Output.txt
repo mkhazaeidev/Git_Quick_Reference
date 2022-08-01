@@ -1,0 +1,19 @@
+Limiting Log Output
+    1- Displays only the last -<n> entries:
+        git log -<n>
+
+    2- The list of commits made in the last <n> weeks:
+        git log --since=<n>.weeks
+        --help: you can use minutes, hours, days, weeks, years
+    
+    3- To filter on a specific author:
+        git log --author="author name"
+
+    4- Search for keywords in the commit messages:
+        git log --grep=<keywords>
+
+    5- Show the commit that changed the <text>:
+        git log -S <text>
+
+    6- To filter log specify a directory or file name:
+        git log -- path/to/file

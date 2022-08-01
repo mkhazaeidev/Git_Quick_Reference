@@ -1,0 +1,5 @@
+Rename Files
+    a- git mv file_from file_to
+
+    b- git rm file_from
+       git add file_to
