@@ -63,10 +63,42 @@ Skipping the Staging Area
 
 Removing Files
     1- Remove the file from working directory:
-        git rm <files>
+        git rm -f <files>
 
     2- Remove the file from stage area:
         git rm <files>
 
     3- To keep the file in your working tree but remove it from your staging area:
         git rm --cached <files>
+
+Rename Files
+    a- git mv file_from file_to
+
+    b- git rm file_from
+       git add file_to
+
+Viewing the Commit History
+    1- To look back to see what has happened (see all commit)
+        git log
+
+    2- to show the difference introduced in each commit:
+        git log -p
+        git log --patch
+
+    3- to see some abbreviated stats for each commit:
+        git log --stat
+
+    4- to show only the last num entries:
+        git log -num
+
+    5- Prints each commit on a single line:
+        a- git log --pretty=oneline
+
+           --help: In addition, the short, full, and fuller values show the output in roughly the same format but with less or more information, respectively
+
+        b- git log --oneline
+
+    6- Showing your branch and merge history ASCII graph:
+        git log --graph
+    
+Limiting Log Output
