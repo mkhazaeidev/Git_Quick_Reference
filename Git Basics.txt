@@ -54,3 +54,19 @@ Viewing Your Staged and Unstaged Changes
 
     3- To see what you’ve staged so far:
         git diff --cached
+
+Committing Your Changes
+    git commit -m "message"
+
+Skipping the Staging Area
+    git commit -a -m "message"
+
+Removing Files
+    1- Remove the file from working directory:
+        git rm <files>
+
+    2- Remove the file from stage area:
+        git rm <files>
+
+    3- To keep the file in your working tree but remove it from your staging area:
+        git rm --cached <files>
