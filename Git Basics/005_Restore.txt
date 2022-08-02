@@ -1,5 +1,7 @@
 Restore files (from Working Directory)
     git restore <file>
+    --old: git checkout -- <file>
 
 Restore files (from Staging Area)
     git restore --staged <file>
+    --old: git reset HEAD <file>
