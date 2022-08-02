@@ -1,0 +1,34 @@
+Showing Your Remotes
+    1- To see which remote servers you have configured:
+        a- display list of shortnames of each remote:
+            git remote
+
+        b- to show the URLs that Git has stored for the shortname to be used when reading and writing to that remote:
+            git remote -v
+    
+Adding Remote Repositories
+    git remote add <shortname> <url>
+
+Fetching and Pulling from Your Remotes
+    1- git fetch <remote>
+
+    2- git pull <remote> <branch>
+        a- fast-forward if possible, else create a merge commit:
+            git config --global pull.rebase "false"
+
+        b- to rebase when pulling:
+            git config --global pull.rebase "true"
+
+Pushing to Your Remotes
+    git push <remote> <branch>
+
+Inspecting a Remote
+    1- to see more information about a particular remote:
+        git remote show <remote>
+
+Renaming and Removing Remotes
+    git remote rename <remote> <new_Name>
+
+Remove a remote
+    git remote remove <remote>
+    git remote rm <remote>
