@@ -1,0 +1,41 @@
+Listing Your Tags
+    git tag
+    git tag -l
+    git tag --list
+    git tag --list "pattern"
+
+Creating Tags
+    1- Annotated Tags:
+        git tag -a <tag_name> -m "message"
+
+        --help: You can see the tag data along with the commit that was tagged by using the git show command.
+                    git show <tag_name>
+
+    2- Lightweight Tags:
+        git tag <tag_name>
+
+Sharing Tags
+    git push <remote> <tag_name>
+
+    --note: to push up a lot of tags at once
+                git push <remote> --tags
+
+            push only annotated tags:
+                git push <remote> --follow-tags
+
+Deleting Tags
+    1- it does not remove the tag from any remote servers:
+        git tag -d <tag_name>
+
+    2- remove the tag from any remote servers:
+        git push <remote> :refs/tags/<tagname>
+        git push <remote> --delete <tag_name>
+
+Checking out Tags
+    git checkout <tag_name>
+
+    --note: hecking out Tags with create new branch to edit old version
+                git checkout -b <new_branch_name> <tag_name>
+
+            to create a new branch after checkout
+                git switch -c <new-branch-name>
