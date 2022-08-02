@@ -1,0 +1,3 @@
+Undoing Things
+    1- to redo that commit, make the additional changes you forgot, stage them, and commit again:
+        git commit --amend
